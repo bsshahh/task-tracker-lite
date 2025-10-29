@@ -104,7 +104,7 @@
     },
     "/categories": {
       "get": {
-        "tags": ["Categories (Admin Only)"],
+        "tags": ["Categories (For All)"],
         "summary": "Get all categories",
         "description": "Retrieves all available categories. Admin access required.",
         "parameters": [
@@ -152,6 +152,99 @@
         "responses": {
           "201": { "description": "Category created" },
           "403": { "description": "Forbidden" }
+        }
+      }
+    },
+    "/categories/{id}": {
+      "put": {
+        "tags": ["Categories (Admin Only)"],
+        "description": "Update a category (Admin only)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Category ID to update"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Bearer token for authentication"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "required": ["name"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "example": "Updated Category Name"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Category updated successfully"
+          },
+          "400": {
+            "description": "Invalid input or missing name"
+          },
+          "401": {
+            "description": "Unauthorized (missing or invalid token)"
+          },
+          "403": {
+            "description": "Forbidden (not an admin user)"
+          },
+          "404": {
+            "description": "Category not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["Categories (Admin Only)"],
+        "description": "Delete a category (Admin only)",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "Category ID to delete"
+          },
+          {
+            "name": "authorization",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "Bearer token for authentication"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Category deleted successfully"
+          },
+          "401": {
+            "description": "Unauthorized (missing or invalid token)"
+          },
+          "403": {
+            "description": "Forbidden (not an admin user)"
+          },
+          "404": {
+            "description": "Category not found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
         }
       }
     },

@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-
+import { TokenBlacklist } from "../models/index.js";
 export const verifyToken = async (req, res, next) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
