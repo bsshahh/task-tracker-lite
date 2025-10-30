@@ -37,10 +37,10 @@ Since here Railway’s hosted MySQL URL is used so the .env file will look like 
 
 ## 🧭 Swagger Documentation
 - Generate Swagger JSON
-node swagger.js
+-- node swagger.js
 
 - Start Server
-npm run dev
+-- npm run dev
 
 
 Now open your browser:
@@ -60,7 +60,7 @@ This project is fully containerized using **Docker** and **Docker Compose** for 
 - A valid `.env` file in the project root with your **Railway database connection URL**
 
 ### 🧱 Build & Run the Container
--run:
+- run:
 docker-compose up --build
 
 
