@@ -27,19 +27,19 @@ npm install
 
 Since here Railway’s hosted MySQL URL is used so the .env file will look like this:
 
-PORT=3000
-DATABASE_URL=mysql://<username>:<password>@containers-us-west-145.railway.app:12345/railway
-JWT_SECRET=your_secret_key
+- PORT=3000
+- DATABASE_URL=mysql://<username>:<password>@containers-us-west-145.railway.app:12345/railway
+- JWT_SECRET=your_secret_key
 
 
 ⚠️ Replace <username>, <password>, and port (like 12345) with the exact values shown in your Railway database connection URL.
 
 
-🧭 Swagger Documentation
-Generate Swagger JSON
+## 🧭 Swagger Documentation
+- Generate Swagger JSON
 node swagger.js
 
-Start Server
+- Start Server
 npm run dev
 
 
@@ -60,26 +60,26 @@ This project is fully containerized using **Docker** and **Docker Compose** for 
 - A valid `.env` file in the project root with your **Railway database connection URL**
 
 ### 🧱 Build & Run the Container
-run:
+-run:
 docker-compose up --build
 
 
-🧰 Scripts
-Command	Description
-npm run start	Start server normally
-npm run dev	Start with nodemon
-node swagger.js	Generate Swagger docs
+### 🧰 Scripts
+- Command	Description
+- npm run start	Start server normally
+- npm run dev	Start with nodemon
+- node swagger.js	Generate Swagger docs
 
 
 
-🧑‍💻 Technologies Used
+## 🧑‍💻 Technologies Used
 
-Node.js / Express.js
-Sequelize ORM
-MySQL (via Railway)
-JWT Authentication
-Swagger Autogen
-Docker
+- Node.js / Express.js
+- Sequelize ORM
+- MySQL (via Railway)
+- JWT Authentication
+- Swagger Autogen
+- Docker
 
 ## 🎬 Video of working APIs 
 
