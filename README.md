@@ -37,10 +37,10 @@ Since here Railway’s hosted MySQL URL is used so the .env file will look like 
 
 ## 🧭 Swagger Documentation
 - Generate Swagger JSON
--- node swagger.js
+   node swagger.js
 
 - Start Server
--- npm run dev
+   npm run dev
 
 
 Now open your browser:
