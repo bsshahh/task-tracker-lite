@@ -58,7 +58,7 @@ This project is fully containerized using **Docker** and **Docker Compose** for 
 
 ### 🧱 Build & Run the Container
 - run:
-docker-compose up --build
+`docker-compose up --build`
 
 
 ### 🧰 Scripts
