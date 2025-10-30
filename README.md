@@ -1,29 +1,29 @@
-#🧩 Task Tracker Lite API
+# 🧩 Task Tracker Lite API
 
 A RESTful backend built with Node.js, Express, and Sequelize, connected to a MySQL database hosted on Railway.
 It includes JWT authentication, Swagger documentation (Autogen), and Docker support.
 ---
 
-##🚀 Features
+## 🚀 Features
 
--🧑‍💻 User Registration & Login (JWT-based)
--🔐 Logout (token invalidation using blacklist)
--📂 CRUD operations for Tasks and Categories
--🧭 Auto-generated Swagger API Docs (swagger-autogen)
--🐳 Docker ready
--☁️ Railway-hosted database support
--🌐 CORS enabled for frontend connection
+- 🧑‍💻 User Registration & Login (JWT-based)
+- 🔐 Logout (token invalidation using blacklist)
+- 📂 CRUD operations for Tasks and Categories
+- 🧭 Auto-generated Swagger API Docs (swagger-autogen)
+- 🐳 Docker ready
+- ☁️ Railway-hosted database support
+- 🌐 CORS enabled for frontend connection
 
 
-⚙️ Setup & Installation
-1️⃣ Clone the repository
+# ⚙️ Setup & Installation
+- 1️⃣ Clone the repository
 git clone https://github.com/bsshahh/task-tracker-lite.git
 cd task-tracker-lite
 
-2️⃣ Install dependencies
+- 2️⃣ Install dependencies
 npm install
 
-3️⃣ Create .env file
+- 3️⃣ Create .env file
 
 Since here Railway’s hosted MySQL URL is used so the .env file will look like this:
 
