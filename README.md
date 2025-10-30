@@ -37,9 +37,11 @@ Since here Railway’s hosted MySQL URL is used so the .env file will look like 
 
 ## 🧭 Swagger Documentation
 - Generate Swagger JSON
+```
    node swagger.js
 
 - Start Server
+```
    npm run dev
 
 
@@ -66,9 +68,9 @@ docker-compose up --build
 
 ### 🧰 Scripts
 - Command	Description
-- npm run start	Start server normally
-- npm run dev	Start with nodemon
-- node swagger.js	Generate Swagger docs
+- npm run start : Start server normally
+- npm run dev : Start with nodemon
+- node swagger.js : Generate Swagger docs
 
 
 
